@@ -36,7 +36,7 @@
   <project path="external/wpa_supplicant_6" name="external-wpa_supplicant_6" remote="x86" revision="honeycomb-x86" />
   <project path="frameworks/base" name="frameworks-base" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/alsa_sound" name="hardware-alsa_sound" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/drm_gralloc" name="hardware-drm_gralloc" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/drm_gralloc" name="external-drm_gralloc" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/gps" name="hardware-gps" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/libhardware" name="hardware-libhardware" remote="x86" revision="honeycomb-x86" />
   <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="x86" revision="honeycomb-x86" />
