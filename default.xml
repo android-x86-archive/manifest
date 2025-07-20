@@ -55,7 +55,6 @@
 
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" revision="d3271024770ddcc2fb87dd22f8280764545ab05a" />
   <project path="bootable/recovery" name="platform/bootable/recovery" revision="512d1239bd65d1d730eac609fd687690639ab07d" />
-  <project path="device/sample" name="device/sample" revision="master" revision="ad753eac75edd1c2baf4326ad3e0dcb4c4d86590" />
   <project path="external/android-mock" name="platform/external/android-mock" revision="40bb73886c61d4b2e96bab98b50c1cbfcb54d9a3" />
   <project path="external/apache-http" name="platform/external/apache-http" revision="ab691647a3d375ba17920e25ec8c8f9d6a80c5bf" />
   <project path="external/apache-xml" name="platform/external/apache-xml" revision="74b8044dcd1208a1fc11ee9638584be74663c5a3" />
