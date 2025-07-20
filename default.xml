@@ -79,7 +79,7 @@
   <project path="external/easymock" name="platform/external/easymock" revision="c9a234086537e5fd820b110bbd99e3cdc695004c" />
   <project path="external/elfcopy" name="platform/external/elfcopy" revision="83a9e97f988380cb719825bcb054aa64455d7207" />
   <project path="external/elfutils" name="platform/external/elfutils" revision="84cf4183ba6f577ee01abe7f1f5a6d4b23df35a8" />
-  <project path="external/embunit" name="platform/external/embunit" revision=336b7c65098af0d1be69f2db55f4e75342d73b3f />
+  <project path="external/embunit" name="platform/external/embunit" revision="336b7c65098af0d1be69f2db55f4e75342d73b3f" />
   <project path="external/emma" name="platform/external/emma" revision="4d37e21b7c2fa378dbf7cfe2ea57d7f5991fe6cd" />
   <project path="external/esd" name="platform/external/esd" revision="224a67f2683a7ee997179fc5dd16115e39987b0f" />
   <project path="external/expat" name="platform/external/expat" revision="6df134250feab71edb5915ecaa6268210bca76c5" />
