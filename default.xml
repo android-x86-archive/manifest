@@ -12,7 +12,7 @@
   <project path="build" name="platform_build" remote="me" revision="honeycomb-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel_common" remote="me" revision="android-3.0.1" />
+  <project path="kernel" name="kernel_common" remote="me" revision="android-3.0.x" />
   <project path="bionic" name="platform_bionic" remote="me" revision="honeycomb-x86" />
   <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="honeycomb-x86" />
   <project path="dalvik" name="dalvik" remote="x86" revision="honeycomb-x86" />
