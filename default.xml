@@ -39,7 +39,7 @@
   <project path="external/compcache" name="CyanogenMod/android_external_compcache" remote="github" revision="master" />
   <project path="external/dbus" name="platform/external/dbus"/>
   <project path="external/dhcpcd" name="platform/external/dhcpcd"/>
-  <project path="external/dnsmasq" name="platform/external/dnsmasq" />
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" revision="ffd68729961f7383f2e35494a03ccdef20f86c98" />
   <project path="external/dosfstools" name="platform/external/dosfstools" />
   <project path="external/dropbear" name="jahrome/android_external_dropbear" remote="github" revision="master" />
   <project path="external/e2fsprogs" name="tpruvot/android_external_e2fsprogs" remote="github" revision="master" />
@@ -66,7 +66,7 @@
   <project path="external/jhead" name="platform/external/jhead"/>
   <project path="external/jpeg" name="CyanogenMod/android_external_jpeg" remote="github" revision="eclair" />
   <project path="external/junit" name="platform/external/junit"/>
-  <project path="external/kernel-headers" name="platform/external/kernel-headers" />
+  <project path="external/kernel-headers" name="platform/external/kernel-headers" revision="eclair-passion-release" />
   <project path="external/lcc" name="platform/external/lcc"/>
   <project path="external/libffi" name="platform/external/libffi"/>
   <project path="external/libpcap" name="platform/external/libpcap"/>
@@ -78,7 +78,7 @@
   <project path="external/netperf" name="platform/external/netperf"/>
   <project path="external/neven" name="platform/external/neven"/>
   <project path="external/opencore" name="CyanogenMod/android_external_opencore" remote="github" revision="eclair" />
-  <project path="external/openssl" name="OMFGB/android_external_openssl" remote="github" revision="master" />
+  <project path="external/openssl" name="OMFGB/external_openssl" remote="github" revision="master" />
   <project path="external/openvpn" name="CyanogenMod/android_external_openvpn" remote="github" revision="eclair" />
   <project path="external/oprofile" name="platform/external/oprofile"/>
   <project path="external/ping" name="platform/external/ping"/>
