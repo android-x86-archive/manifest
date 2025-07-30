@@ -6,30 +6,30 @@
 
   <default revision="eclair-release" remote="korg"/>
 
-  <project path="build" name="CyanogenMod/android_build" remote="github">
+  <project path="build" name="CyanogenMod/android_build" remote="github" revision="eclair">
     <copyfile src="core/root.mk" dest="Makefile"/>
   </project>
 
   <project path="kernel-msm" name="CyanogenMod/cm-kernel" remote="github" revision="android-msm-2.6.34" />
 
-  <project path="bionic" name="CyanogenMod/android_bionic" remote="github" />
+  <project path="bionic" name="CyanogenMod/android_bionic" remote="github" revision="eclair" />
 
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy"/>
   <project path="bootable/diskinstaller" name="platform/bootable/diskinstaller"/>
-  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" />
+  <project path="bootable/recovery" name="CyanogenMod/android_bootable_recovery" remote="github" revision="eclair" />
 
   <project path="cts" name="platform/cts" />
 
-  <project path="dalvik" name="CyanogenMod/android_dalvik" remote="github" />
+  <project path="dalvik" name="CyanogenMod/android_dalvik" remote="github" revision="eclair" />
 
-  <project path="development" name="CyanogenMod/android_development" remote="github" />
+  <project path="development" name="CyanogenMod/android_development" remote="github" revision="eclair" />
 
   <project path="external/aes" name="platform/external/aes"/>
   <project path="external/apache-http" name="platform/external/apache-http"/>
   <project path="external/astl" name="platform/external/astl"/>
   <project path="external/bison" name="platform/external/bison"/>
   <project path="external/blktrace" name="platform/external/blktrace"/>
-  <project path="external/bluetooth/bluez" name="CyanogenMod/android_external_bluetooth_bluez" remote="github" />
+  <project path="external/bluetooth/bluez" name="CyanogenMod/android_external_bluetooth_bluez" remote="github" revision="eclair" />
   <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib"/>
   <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump"/>
   <project path="external/bsdiff" name="platform/external/bsdiff"/>
