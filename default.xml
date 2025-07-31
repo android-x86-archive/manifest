@@ -3,58 +3,60 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com/" />
   <remote  name="x86"
-           fetch="." />
+           fetch="https://github.com/android-x86-mirror" />
+  <remote  name="x32"
+           fetch="https://github.com/android-x86-archive" />
   <default revision="refs/tags/android-1.6_r2"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
 
   <!-- from x86 port repositories -->
-  <project path="build" name="platform/build" remote="x86" revision="donut-x86">
+  <project path="build" name="platform_build" remote="x32" revision="donut-x86">
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
 
-  <project path="kernel" name="kernel/common" revision="refs/heads/android-2.6.29" remote="x86" />
+  <project path="kernel" name="kernel_common" revision="refs/heads/android-2.6.29" remote="x32" />
 
-  <project path="bionic" name="platform/bionic" remote="x86" revision="donut-x86" />
-  <project path="dalvik" name="platform/dalvik" remote="x86" revision="donut-x86" />
-  <project path="development" name="platform/development" remote="x86" revision="donut-x86" />
-  <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="donut-x86" />
-  <project path="frameworks/policies/base" name="platform/frameworks/policies/base" remote="x86" revision="donut-x86" />
-  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" remote="x86" revision="donut-x86" />
-  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" revision="donut-x86" />
-  <project path="hardware/ril" name="platform/hardware/ril" remote="x86" revision="donut-x86" />
-  <project path="prebuilt" name="platform/prebuilt" remote="x86" revision="donut-x86" />
-  <project path="system/bluetooth" name="platform/system/bluetooth" remote="x86" revision="donut-x86" />
-  <project path="system/core" name="platform/system/core" remote="x86" revision="donut-x86" />
-  <project path="system/extras" name="platform/system/extras" remote="x86" revision="donut-x86" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/AlarmClock" name="platform/packages/apps/AlarmClock" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/ConnectBot" name="platform/packages/apps/ConnectBot" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/FileManager" name="platform/packages/apps/FileManager" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/LIME" name="platform/packages/apps/LIME" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" remote="x86" revision="donut-x86" />
-  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="donut-x86" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" remote="x86" revision="donut-x86" />
-  <project path="external/bluez" name="platform/external/bluez" remote="x86" revision="donut-x86" />
-  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="donut-x86" />
-  <project path="external/dhcpcd" name="platform/external/dhcpcd" remote="x86" revision="donut-x86" />
-  <project path="external/tslib" name="platform/external/tslib" remote="x86" revision="donut-x86" />
-  <project path="external/drm" name="platform/external/drm" remote="x86" revision="donut-x86" />
-  <project path="external/eject" name="platform/external/eject" remote="x86" revision="donut-x86" />
-  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="donut-x86" />
-  <project path="external/opencore" name="platform/external/opencore" remote="x86" revision="donut-x86" />
-  <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="donut-x86" />
-  <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" remote="x86" revision="donut-x86" />
-  <project path="hardware/menlow/psb" name="platform/hardware/menlow/psb" remote="x86" revision="android-2.6.29" />
-  <project path="hardware/menlow/ioport" name="platform/hardware/menlow/ioport" remote="x86" revision="donut-x86" />
+  <project path="bionic" name="bionic" remote="x86" revision="donut-x86" />
+  <project path="dalvik" name="dalvik" remote="x86" revision="donut-x86" />
+  <project path="development" name="development" remote="x86" revision="donut-x86" />
+  <project path="frameworks/base" name="frameworks-base" remote="x86" revision="donut-x86" />
+  <project path="frameworks/policies/base" name="frameworks-policies-base" remote="x86" revision="donut-x86" />
+  <project path="hardware/alsa_sound" name="hardware-alsa_sound" remote="x86" revision="donut-x86" />
+  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="x86" revision="donut-x86" />
+  <project path="hardware/ril" name="hardware-ril" remote="x86" revision="donut-x86" />
+  <project path="prebuilt" name="prebuilt" remote="x86" revision="donut-x86" />
+  <project path="system/bluetooth" name="system-bluetooth" remote="x86" revision="donut-x86" />
+  <project path="system/core" name="system-core" remote="x86" revision="donut-x86" />
+  <project path="system/extras" name="system-extras" remote="x86" revision="donut-x86" />
+  <project path="packages/providers/DownloadProvider" name="packages-providers-DownloadProvider" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/AlarmClock" name="packages-apps-AlarmClock" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/Camera" name="packages-apps-Camera" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/ConnectBot" name="packages-apps-ConnectBot" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/Contacts" name="packages-apps-Contacts" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/FileManager" name="packages-apps-FileManager" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/LIME" name="packages-apps-LIME" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/Music" name="packages-apps-Music" remote="x86" revision="donut-x86" />
+  <project path="packages/apps/Settings" name="packages-apps-Settings" remote="x86" revision="donut-x86" />
+  <project path="packages/inputmethods/PinyinIME" name="packages-inputmethods-PinyinIME" remote="x86" revision="donut-x86" />
+  <project path="external/bluez" name="external-bluez" remote="x86" revision="donut-x86" />
+  <project path="external/busybox" name="external-busybox" remote="x86" revision="donut-x86" />
+  <project path="external/dhcpcd" name="external-dhcpcd" remote="x86" revision="donut-x86" />
+  <project path="external/tslib" name="external-tslib" remote="x86" revision="donut-x86" />
+  <project path="external/drm" name="external-libdrm" remote="x86" revision="donut-x86" />
+  <project path="external/eject" name="external-eject" remote="x86" revision="donut-x86" />
+  <project path="external/mesa" name="external-mesa" remote="x86" revision="donut-x86" />
+  <project path="external/opencore" name="external-opencore" remote="x86" revision="donut-x86" />
+  <project path="external/ppp" name="external-ppp" remote="x86" revision="donut-x86" />
+  <project path="external/wpa_supplicant" name="external-wpa_supplicant" remote="x86" revision="donut-x86" />
+  <project path="hardware/menlow/psb" name="hardware-menlow-psb" remote="x86" revision="android-2.6.29" />
+  <project path="hardware/menlow/ioport" name="hardware-menlow-ioport" remote="x86" revision="donut-x86" />
 
-  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="donut-x86" />
-  <project path="vendor/asus/eeepc" name="platform/vendor/asus/eeepc" remote="x86" revision="donut-x86" />
-  <project path="vendor/samsung/q1u" name="platform/vendor/samsung/q1u" remote="x86" revision="donut-x86" />
-  <project path="vendor/viliv/s5" name="device/viliv/s5" remote="x86" revision="donut-x86" />
+  <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="donut-x86" />
+  <project path="vendor/asus/eeepc" name="vendor-asus-eeepc" remote="x86" revision="donut-x86" />
+  <project path="vendor/samsung/q1u" name="vendor-samsung-q1u" remote="x86" revision="donut-x86" />
+  <project path="vendor/viliv/s5" name="device-viliv-s5" remote="x86" revision="donut-x86" />
 
   <!-- from original Android repositories -->
   <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
