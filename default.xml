@@ -40,7 +40,7 @@
   <project path="packages/apps/Music" name="packages-apps-Music" remote="x86" revision="donut-x86" />
   <project path="packages/apps/Settings" name="packages-apps-Settings" remote="x86" revision="donut-x86" />
   <project path="packages/inputmethods/PinyinIME" name="packages-inputmethods-PinyinIME" remote="x86" revision="donut-x86" />
-  <project path="external/bluez" name="external-bluez" remote="x86" revision="donut-x86" />
+  <project path="external/bluez" name="external-bluetooth-bluez" remote="x86" revision="donut-x86" />
   <project path="external/busybox" name="external-busybox" remote="x86" revision="donut-x86" />
   <project path="external/dhcpcd" name="external-dhcpcd" remote="x86" revision="donut-x86" />
   <project path="external/tslib" name="external-tslib" remote="x86" revision="donut-x86" />
