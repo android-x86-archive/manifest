@@ -94,7 +94,7 @@
   <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
   <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
   <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
+  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" remote="linaro" revision="donut" />
   <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
   <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
   <project path="packages/apps/Sync" name="platform/packages/apps/Sync" />
@@ -106,7 +106,7 @@
 
   <project path="external/aes" name="platform/external/aes" />
   <project path="external/alsa-lib" name="platform/external/alsa-lib" revision="donut" remote="linaro" />
-  <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="donut"  remote="linaro" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="donut" remote="linaro" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bison" name="platform/external/bison" />
@@ -165,7 +165,7 @@
   <project path="external/svox" name="platform/external/svox" />
   <project path="external/tagsoup" name="platform/external/tagsoup" />
   <project path="external/tcpdump" name="platform/external/tcpdump" />
-  <project path="external/tesseract" name="platform/external/tesseract" revision="eclair-release" />
+  <project path="external/tesseract" name="platform/external/tesseract" remote="linaro" revision="donut-plus-aosp" />
   <project path="external/tinyxml" name="platform/external/tinyxml" />
   <project path="external/tremor" name="platform/external/tremor" />
   <project path="external/webkit" name="platform/external/webkit" />
