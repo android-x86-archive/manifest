@@ -56,7 +56,7 @@
   <project path="hardware/menlow/ioport" name="hardware-menlow-ioport" remote="x86" revision="donut-x86" />
 
   <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="donut-x86" />
-  <project path="vendor/asus/eeepc" name="vendor-asus-eeepc" remote="x86" revision="donut-x86" />
+  <project path="vendor/asus/eeepc" name="device-asus-eeepc" remote="x86" revision="donut-x86" />
   <project path="vendor/samsung/q1u" name="vendor-samsung-q1u" remote="x86" revision="donut-x86" />
   <project path="vendor/viliv/s5" name="device-viliv-s5" remote="x86" revision="donut-x86" />
 
