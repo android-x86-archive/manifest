@@ -56,8 +56,8 @@
   <project path="hardware/menlow/ioport" name="hardware-menlow-ioport" remote="x86" revision="donut-x86" />
 
   <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="donut-x86" />
-  <project path="vendor/asus/eeepc" name="vendor-asus-eeepc" remote="x86" revision="donut-x86" remote="linaro" />
-  <project path="vendor/samsung/q1u" name="vendor-samsung-q1u" remote="x86" revision="donut-x86" remote="linaro" />
+  <project path="vendor/asus/eeepc" name="vendor-asus-eeepc" remote="x86" revision="donut-x86" />
+  <project path="vendor/samsung/q1u" name="vendor-samsung-q1u" remote="x86" revision="donut-x86" />
   <project path="vendor/viliv/s5" name="device-viliv-s5" remote="x86" revision="donut-x86" />
 
   <!-- from original Android repositories -->
@@ -105,8 +105,8 @@
   <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
 
   <project path="external/aes" name="platform/external/aes" />
-  <project path="external/alsa-lib" name="platform/external/alsa-lib" revision="donut" />
-  <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="donut" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" revision="donut" remote="linaro" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" revision="donut"  remote="linaro" />
   <project path="external/apache-http" name="platform/external/apache-http" />
   <project path="external/astl" name="platform/external/astl" />
   <project path="external/bison" name="platform/external/bison" />
