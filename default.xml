@@ -5,7 +5,7 @@
   <remote  name="x86"
            fetch="https://github.com/android-x86-mirror/" />
   <remote  name="me"
-           fetch="https://github.com/cyanogen-x86-open-source-project/" />
+           fetch="https://github.com/android-x86-archive/" />
   <default revision="ics-plus-aosp" remote="aosp" sync-j="16" />
 
   <!-- From x86 port repositories -->
