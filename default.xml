@@ -2,21 +2,19 @@
 <manifest>
 
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+           fetch="https://android-review.linaro.org/" />
   <remote  name="x86"
            fetch="https://github.com/android-x86-mirror/" />
-  <remote  name="cyanogen"
-           fetch="https://github.com/cyanogen-x86-open-source-project" />
   <default revision="gingerbread-mr4-release"
            remote="aosp"
            sync-c="true"
            sync-j="4" />
 
   <!-- from x86 port repositories -->
-  <project path="build" name="platform_build" remote="cyanogen" revision="gingerbread-x86" >
+  <project path="build" name="build" remote="x86" revision="gingerbread-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel_common" remote="cyanogen" revision="android-2.6.39" />
+  <project path="kernel" name="kernel" remote="x86" revision="android-2.6.39" />
   <project path="bionic" name="bionic" remote="x86" revision="gingerbread-x86" />
   <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="gingerbread-x86" />
   <project path="development" name="development" remote="x86" revision="gingerbread-x86" />
@@ -40,7 +38,7 @@
   <project path="external/wpa_supplicant_6" name="external-wpa_supplicant_6" remote="x86" revision="gingerbread-x86" />
   <project path="frameworks/base" name="frameworks-base" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/alsa_sound" name="hardware-alsa_sound" remote="x86" revision="gingerbread-x86" />
-  <project path="hardware/drm_gralloc" name="external-drm_gralloc" remote="x86" revision="gingerbread-x86" />
+  <project path="hardware/drm_gralloc" name="hardware-drm_gralloc" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/gps" name="hardware-gps" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/libhardware" name="hardware-libhardware" remote="x86" revision="gingerbread-x86" />
   <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="x86" revision="gingerbread-x86" />
