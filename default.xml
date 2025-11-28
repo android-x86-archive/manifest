@@ -1,100 +1,99 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote  name="aosp"
-           fetch="https://android.googlesource.com/" />
+           fetch="git://android-x86.git.sf.net/gitroot/android-x86/korg/" />
   <remote  name="x86"
-           fetch="https://github.com/android-x86-mirror/" />
-  <remote  name="me"
-           fetch="https://github.com/android-x86-archive/" />
-  <default revision="ics-plus-aosp" remote="aosp" sync-j="16" />
+           fetch=".." />
+  <default revision="refs/tags/HLK75D" remote="aosp" sync-j="1" />
 
   <!-- From x86 port repositories -->
-  <project path="build" name="platform_build" remote="me" revision="honeycomb-x86" >
+  <project path="build" name="platform/build" remote="x86" revision="honeycomb-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel_common" remote="me" revision="android-3.0.x" />
-  <project path="bionic" name="platform_bionic" remote="me" revision="honeycomb-x86" />
-  <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="honeycomb-x86" />
-  <project path="dalvik" name="dalvik" remote="x86" revision="honeycomb-x86" />
-  <project path="development" name="development" remote="x86" revision="honeycomb-x86" />
-  <project path="device/amd" name="device-amd" remote="x86" revision="honeycomb-x86" />
-  <project path="device/asus/eeepc" name="device-asus-eeepc" remote="x86" revision="honeycomb-x86" />
-  <project path="device/asus/laptop" name="device-asus-laptop" remote="x86" revision="honeycomb-x86" />
-  <project path="device/common" name="device-common" remote="x86" revision="honeycomb-x86" />
-  <project path="device/hp/tx2500" name="device-hp-tx2500" remote="x86" revision="honeycomb-x86" />
-  <project path="device/lenovo/s103t" name="device-lenovo-s103t" remote="x86" revision="honeycomb-x86" />
-  <project path="device/tegatech/tegav2" name="device-tegatech-tegav2" remote="x86" revision="honeycomb-x86" />
-  <project path="device/vm/vm" name="device-vm-vm" remote="x86" revision="honeycomb-x86" />
-  <project path="external/alsa-lib" name="external-alsa-lib" remote="x86" revision="honeycomb-x86" />
-  <project path="external/alsa-utils" name="external-alsa-utils" remote="x86" revision="honeycomb-x86" />
-  <project path="external/busybox" name="external-busybox" remote="x86" revision="honeycomb-x86" />
-  <project path="external/drm" name="external-libdrm" remote="x86" revision="honeycomb-x86" />
-  <project path="external/mesa" name="external-mesa" remote="x86" revision="honeycomb-x86" />
-  <project path="external/ppp" name="external-ppp" remote="x86" revision="honeycomb-x86" />
-  <project path="external/tslib" name="external-tslib" remote="x86" revision="honeycomb-x86" />
-  <project path="external/v86d" name="external-v86d" remote="x86" revision="honeycomb-x86" />
-  <project path="external/wpa_supplicant_6" name="external-wpa_supplicant_6" remote="x86" revision="honeycomb-x86" />
-  <project path="frameworks/base" name="frameworks-base" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/alsa_sound" name="hardware-alsa_sound" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/drm_gralloc" name="external-drm_gralloc" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/gps" name="hardware-gps" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/libhardware" name="hardware-libhardware" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/libhardware_legacy" name="hardware-libhardware_legacy" remote="x86" revision="honeycomb-x86" />
-  <project path="hardware/libsensors" name="hardware-libsensors" remote="x86" revision="honeycomb-x86" />
-  <project path="packages/apps/AndroidTerm" name="packages-apps-AndroidTerm" remote="x86" revision="honeycomb-x86" />
-  <project path="packages/apps/FileManager" name="packages-apps-FileManager" remote="x86" revision="honeycomb-x86" />
-  <project path="packages/apps/Settings" name="packages-apps-Settings" remote="x86" revision="honeycomb-x86" />
-  <project path="prebuilt" name="prebuilt" remote="x86" revision="honeycomb-x86" />
-  <project path="sdk" name="sdk" remote="x86" revision="honeycomb-x86" />
-  <project path="system/bluetooth" name="system-bluetooth" remote="x86" revision="honeycomb-x86" />
-  <project path="system/core" name="system-core" remote="x86" revision="honeycomb-x86" />
-  <project path="system/extras" name="system-extras" remote="x86" revision="honeycomb-x86" />
-  <project path="system/vold" name="system-vold" remote="x86" revision="honeycomb-x86" />
+  <project path="kernel" name="kernel/common" remote="x86" revision="android-3.0.1" />
+  <project path="bionic" name="platform/bionic" remote="x86" revision="honeycomb-x86" />
+  <project path="bootable/newinstaller" name="platform/bootable/newinstaller" remote="x86" revision="honeycomb-x86" />
+  <project path="dalvik" name="platform/dalvik" remote="x86" revision="honeycomb-x86" />
+  <project path="development" name="platform/development" remote="x86" revision="honeycomb-x86" />
+  <project path="device/amd" name="device/amd" remote="x86" revision="honeycomb-x86" />
+  <project path="device/asus/eeepc" name="device/asus/eeepc" remote="x86" revision="honeycomb-x86" />
+  <project path="device/asus/laptop" name="device/asus/laptop" remote="x86" revision="honeycomb-x86" />
+  <project path="device/common" name="device/common" remote="x86" revision="honeycomb-x86" />
+  <project path="device/hp/tx2500" name="device/hp/tx2500" remote="x86" revision="honeycomb-x86" />
+  <project path="device/lenovo/s103t" name="device/lenovo/s103t" remote="x86" revision="honeycomb-x86" />
+  <project path="device/tegatech/tegav2" name="device/tegatech/tegav2" remote="x86" revision="honeycomb-x86" />
+  <project path="device/vm/vm" name="device/vm/vm" remote="x86" revision="honeycomb-x86" />
+  <project path="external/alsa-lib" name="platform/external/alsa-lib" remote="x86" revision="honeycomb-x86" />
+  <project path="external/alsa-utils" name="platform/external/alsa-utils" remote="x86" revision="honeycomb-x86" />
+  <project path="external/busybox" name="platform/external/busybox" remote="x86" revision="honeycomb-x86" />
+  <project path="external/drm" name="platform/external/drm" remote="x86" revision="honeycomb-x86" />
+  <project path="external/mesa" name="platform/external/mesa" remote="x86" revision="honeycomb-x86" />
+  <project path="external/ppp" name="platform/external/ppp" remote="x86" revision="honeycomb-x86" />
+  <project path="external/tslib" name="platform/external/tslib" remote="x86" revision="honeycomb-x86" />
+  <project path="external/v86d" name="platform/external/v86d" remote="x86" revision="honeycomb-x86" />
+  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" remote="x86" revision="honeycomb-x86" />
+  <project path="frameworks/base" name="platform/frameworks/base" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/alsa_sound" name="platform/hardware/alsa_sound" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/drm_gralloc" name="platform/hardware/drm_gralloc" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/gps" name="platform/hardware/gps" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/libhardware" name="platform/hardware/libhardware" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/libhardware_legacy" name="platform/hardware/libhardware_legacy" remote="x86" revision="honeycomb-x86" />
+  <project path="hardware/libsensors" name="platform/hardware/libsensors" remote="x86" revision="honeycomb-x86" />
+  <project path="packages/apps/AndroidTerm" name="platform/packages/apps/AndroidTerm" remote="x86" revision="honeycomb-x86" />
+  <project path="packages/apps/FileManager" name="platform/packages/apps/FileManager" remote="x86" revision="honeycomb-x86" />
+  <project path="packages/apps/Settings" name="platform/packages/apps/Settings" remote="x86" revision="honeycomb-x86" />
+  <project path="prebuilt" name="platform/prebuilt" remote="x86" revision="honeycomb-x86" />
+  <project path="sdk" name="platform/sdk" remote="x86" revision="honeycomb-x86" />
+  <project path="system/bluetooth" name="platform/system/bluetooth" remote="x86" revision="honeycomb-x86" />
+  <project path="system/core" name="platform/system/core" remote="x86" revision="honeycomb-x86" />
+  <project path="system/extras" name="platform/system/extras" remote="x86" revision="honeycomb-x86" />
+  <project path="system/vold" name="platform/system/vold" remote="x86" revision="honeycomb-x86" />
 
   <!-- BEGIN open-source projects -->
 
-  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" revision="d3271024770ddcc2fb87dd22f8280764545ab05a" />
-  <project path="bootable/recovery" name="platform/bootable/recovery" revision="512d1239bd65d1d730eac609fd687690639ab07d" />
-  <project path="external/android-mock" name="platform/external/android-mock" revision="40bb73886c61d4b2e96bab98b50c1cbfcb54d9a3" />
-  <project path="external/apache-http" name="platform/external/apache-http" revision="ab691647a3d375ba17920e25ec8c8f9d6a80c5bf" />
-  <project path="external/apache-xml" name="platform/external/apache-xml" revision="74b8044dcd1208a1fc11ee9638584be74663c5a3" />
-  <project path="external/astl" name="platform/external/astl" revision="d13073fbb2bdb9a1bca751f103725a12de7ceafa" />
-  <project path="external/bison" name="platform/external/bison" revision="4af3c477523bc96a5a535500a722cd563f1d486f" />
-  <project path="external/blktrace" name="platform/external/blktrace" revision="55236cdbcee4e543d69e2c25dbf27c62301d760a" />
-  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" revision="b6bd98e506f0bbc923954c7d46c998ddb7ff51ff" />
-  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" revision="1143b9918eab068401b604eb11c3f651f4e38b25" />
-  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" revision="7322661808c2006b7848e79e6bb72b37fbcf6710" />
-  <project path="external/bouncycastle" name="platform/external/bouncycastle" revision="120c7be3b96ad42d92b9db1a75e5e5845bf3a723" />
-  <project path="external/bsdiff" name="platform/external/bsdiff" revision="81872540236d9bb15cccf963d05b9de48baa5375" />
-  <project path="external/bzip2" name="platform/external/bzip2" revision="172b266ed7845eac2edc7e7f8a72371356a9a277" />
-  <project path="external/chromium" name="platform/external/chromium" revision="e4aeb840e5cd2acd20cf6b18af808af55a92e745" />
-  <project path="external/clang" name="platform/external/clang" revision="4522e2a9e7fa0313e8e5a388d8f0ab66feccc6af" />
-  <project path="external/collada" name="platform/external/collada" revision="538700ec332c8306a1283f8dfdb016e493905e6f" />
-  <project path="external/dbus" name="platform/external/dbus" revision="12a8f9246cc292e34c0c0fa20f2dbf8d738dc11e" />
-  <project path="external/dhcpcd" name="platform/external/dhcpcd" revision="0d3a47d979ac35a49b2a2da9e80e16bd37aab877" />
-  <project path="external/dnsmasq" name="platform/external/dnsmasq" revision="refs/tags/android-3.2.2_r1" />
-  <project path="external/doclava" name="platform/external/doclava" revision="c53bda660d09211b6505668091a17bbb28ee3237" />
-  <project path="external/dropbear" name="platform/external/dropbear" revision="f57594030e578089ecf52e29559f0703b1a8ea6b" />
-  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" revision="refs/tags/android-3.2.2_r1" />
-  <project path="external/easymock" name="platform/external/easymock" revision="c9a234086537e5fd820b110bbd99e3cdc695004c" />
-  <project path="external/elfcopy" name="platform/external/elfcopy" revision="83a9e97f988380cb719825bcb054aa64455d7207" />
-  <project path="external/elfutils" name="platform/external/elfutils" revision="84cf4183ba6f577ee01abe7f1f5a6d4b23df35a8" />
-  <project path="external/embunit" name="platform/external/embunit" revision="336b7c65098af0d1be69f2db55f4e75342d73b3f" />
-  <project path="external/emma" name="platform/external/emma" revision="4d37e21b7c2fa378dbf7cfe2ea57d7f5991fe6cd" />
-  <project path="external/esd" name="platform/external/esd" revision="224a67f2683a7ee997179fc5dd16115e39987b0f" />
-  <project path="external/expat" name="platform/external/expat" revision="6df134250feab71edb5915ecaa6268210bca76c5" />
-  <project path="external/fdlibm" name="platform/external/fdlibm" revision="988ffeb12a6e044ae3504838ef1fee3fe0716934" />
-  <project path="external/flac" name="platform/external/flac" revision="5893fbe890f5dab8e4146d2baa4bd2691c0739e0" />
-  <project path="external/freetype" name="platform/external/freetype" revision="15321e16a085b9b5c85cf029aee86bf57b2e65c1" />
-  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" revision="8af338f520b04f8360a452875b9885374a1b7d29" />
-  <project path="external/genext2fs" name="platform/external/genext2fs" revision="gingerbread" />
-  <project path="external/giflib" name="platform/external/giflib" revision="gingerbread" />
-  <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" revision="ics-plus-aosp" />
-  <project path="external/grub" name="platform/external/grub" revision="ics-plus-aosp" />
-  <project path="external/gtest" name="platform/external/gtest" revision="gingerbread" />
-  <project path="external/guava" name="platform/external/guava" revision="gingerbread" />
-  <project path="external/harfbuzz" name="platform/external/harfbuzz" revision="ics-mr0" />
-  <project path="external/hsqldb" name="platform/external/hsqldb" revision="master" />
+  <project path="bootable/bootloader/legacy" name="platform/bootable/bootloader/legacy" />
+  <project path="bootable/recovery" name="platform/bootable/recovery" />
+  <project path="device/sample" name="device/sample" revision="master" />
+  <project path="external/android-mock" name="platform/external/android-mock" />
+  <project path="external/apache-http" name="platform/external/apache-http" />
+  <project path="external/apache-xml" name="platform/external/apache-xml" />
+  <project path="external/astl" name="platform/external/astl" />
+  <project path="external/bison" name="platform/external/bison" />
+  <project path="external/blktrace" name="platform/external/blktrace" />
+  <project path="external/bluetooth/bluez" name="platform/external/bluetooth/bluez" />
+  <project path="external/bluetooth/glib" name="platform/external/bluetooth/glib" />
+  <project path="external/bluetooth/hcidump" name="platform/external/bluetooth/hcidump" />
+  <project path="external/bouncycastle" name="platform/external/bouncycastle" />
+  <project path="external/bsdiff" name="platform/external/bsdiff" />
+  <project path="external/bzip2" name="platform/external/bzip2" />
+  <project path="external/chromium" name="platform/external/chromium" />
+  <project path="external/clang" name="platform/external/clang" />
+  <project path="external/collada" name="platform/external/collada" />
+  <project path="external/dbus" name="platform/external/dbus" />
+  <project path="external/dhcpcd" name="platform/external/dhcpcd" />
+  <project path="external/dnsmasq" name="platform/external/dnsmasq" />
+  <project path="external/doclava" name="platform/external/doclava" />
+  <project path="external/dropbear" name="platform/external/dropbear" />
+  <project path="external/e2fsprogs" name="platform/external/e2fsprogs" />
+  <project path="external/easymock" name="platform/external/easymock" />
+  <project path="external/elfcopy" name="platform/external/elfcopy" />
+  <project path="external/elfutils" name="platform/external/elfutils" />
+  <project path="external/embunit" name="platform/external/embunit" />
+  <project path="external/emma" name="platform/external/emma" />
+  <project path="external/esd" name="platform/external/esd" />
+  <project path="external/expat" name="platform/external/expat" />
+  <project path="external/fdlibm" name="platform/external/fdlibm" />
+  <project path="external/flac" name="platform/external/flac" />
+  <project path="external/freetype" name="platform/external/freetype" />
+  <project path="external/fsck_msdos" name="platform/external/fsck_msdos" />
+  <project path="external/genext2fs" name="platform/external/genext2fs" />
+  <project path="external/giflib" name="platform/external/giflib" />
+  <project path="external/google-diff-match-patch" name="platform/external/google-diff-match-patch" />
+  <project path="external/grub" name="platform/external/grub" />
+  <project path="external/gtest" name="platform/external/gtest" />
+  <project path="external/guava" name="platform/external/guava" />
+  <project path="external/harfbuzz" name="platform/external/harfbuzz" />
+  <project path="external/hsqldb" name="platform/external/hsqldb" />
   <project path="external/hyphenation" name="platform/external/hyphenation" />
   <project path="external/icu4c" name="platform/external/icu4c" />
   <project path="external/iproute2" name="platform/external/iproute2" />
@@ -154,64 +153,65 @@
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/zlib" name="platform/external/zlib" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" />
+  <project path="frameworks/compile/pixelflinger2" name="platform/frameworks/compile/pixelflinger2" />
   <project path="frameworks/compile/slang" name="platform/frameworks/compile/slang" />
-  <project path="frameworks/ex" name="platform/frameworks/ex" revision="e6cf5b6e3ad9fb34284471364b0a0dfc104f2899" />
-  <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor"  />
-  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" revision="ics-plus-aosp" />
-  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" revision="ics-plus-aosp" />
+  <project path="frameworks/ex" name="platform/frameworks/ex" />
+  <project path="frameworks/media/libvideoeditor" name="platform/frameworks/media/libvideoeditor" />
+  <project path="frameworks/opt/emoji" name="platform/frameworks/opt/emoji" />
+  <project path="frameworks/opt/vcard" name="platform/frameworks/opt/vcard" />
   <project path="frameworks/support" name="platform/frameworks/support" />
-  <project path="hardware/ril" name="platform/hardware/ril" revision="2c8c96556ba797789b45ba2465ef892568c7312d" />
-  <project path="libcore" name="platform/libcore" revision="ics-mr0" />
-  <project path="ndk" name="platform/ndk" revision="13f38e961546e562e1cf595b57c428e67f1401b5" />
-  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" revision="2231b4840e066b2c021af7400340e00b72c9a055" />
-  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" revision="33805fdc65fac4b11afd1da6d2a1716c7d1c36d9" />
-  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" revision="8d021aa02f8f9e7f167649dbe83832827b0454e3" />
-  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" revision="353efcf389f91927b825a1d2db18c6b6e616f25b" />
-  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" revision="5a9ce87034be785dbb2e3bd238c191f393c2ed52" />
-  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" revision="9eeda83d459ace6890c65f94a5292ad3fdac7996" />
-  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" revision="40320d2b278f433396e941dd4a6b098bab90f6e2" />
-  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" revision="892292026fbf9d37577ef519bb42252bae20451e" />
-  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" revision="7da35f8117fec593cb2df61df354a7b9370e5aa4" />
-  <project path="packages/apps/Email" name="platform/packages/apps/Email" revision="002a1802cad235ffa8f7152e0d0a5a2ebad14f63" />
-  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" revision="d515fddd0b5f9461fe9ff53c4bf9892fd1724dd7" />
-  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" revision="3d4c2db75b6b7758ccbcdb84bcf6ae5dc742929d" />
-  <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" revision="gingerbread" />
-  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" revision="39d35d3478dca214f6f494a3915384adacdb7040" />
-  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" revision="e33f810a19d5db5b5c5a67eceeb12a5bc1a51b09" />
-  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" revision="677fd73e1dad8f9ea3873e173e40e983d93b7e78" />
-  <project path="packages/apps/Music" name="platform/packages/apps/Music" revision="7a72e2fb27da2c0be03a4b93f907cbee0d140e66" />
-  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" revision="ad60b90517cc8e21538ff35075fec7c151a3d8b9" />
-  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" revision="df5008dcc46ff7fda38d149468a3b904f0b49033" />
-  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" revision="b2c5add1ff65b83b0320eb7d671d773b1d745a96" />
-  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" revision="38bfd639a691b7a812a53b3737e17cc428d9303d" />
-  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" revision="f31b933a8aebf07e3feb512ac650c5691c8c5e0f" />
-  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" revision="fbf900fe79996ea8f293a2dcca873cbb8128fdb7" />
-  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" revision="499194c3348310a2e1b875724b469b8384b36d20" />
-  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" revision="62db451fb742f17669300b9915b9f446f43361ce" />
-  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" revision="d91b1bd4b6a56c98c50d1a13b70fe05cdf371d4d" />
-  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" revision="72aefdebc9fbc3907302f75648858832e2c98a41" />
-  <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" revision="3ea099efd1b7cffb4e67170a6a7c312dc45ec79d" />
-  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" revision="2690ccc41b9d3d48705cd2b507d85671f7a19ef7" />
-  <project path="packages/experimental" name="platform/packages/experimental" revision="705bbba5147654bd9fb46d6b92f0e0c72b560483" />
-  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" revision="2d9722e46c774d51c834c3a8b11261a2a22e09d3" />
-  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" revision="refs/heads/ics-mr0" />
-  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" revision="refs/heads/ics-mr0" />
-  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" revision="bb9778cdeb382975b698de6c37a39b00ce54a0d1" />
-  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" revision="9a7ce0211a00a6290599dab3bba1e3c2d276a9aa" />
-  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" revision="d022a80fababc650b4b4f3f5d25b877518aed266" />
-  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" revision="715d0c9297bc3d290e983c3f365bf9226e0a7556" />
-  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" revision="6b5346aa65e9a131663e8eae91097316e856c492" />
-  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" revision="refs/heads/ics-mr0" />
-  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" revision="fd8402c8904368ad9e90a7fffe4237c87e11273c" />
-  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" revision="bae4b07ec2b83007aa24eb86d28cdbb347ddec0e" />
-  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" revision="refs/heads/ics-mr0" />
-  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" revision="e42c3eece07ff68a43827284f7a79d543b7b4bc0" />
-  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" revision="a1b111eb2c9175513923ddd6b480de0f04cf1ced" />
-  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" revision="c8a13d0949ffbf57ab082e344e6057dfaaba8d75" />
-  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" revision="57e193abe5600b7012ce455352d766558ec715a9" />
-  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" revision="d72d5a6e9b73533bd1314f4bd8ff18d33f50f830" />
-  <project path="system/media" name="platform/system/media" revision="df6bf85dae919953cbf350257a36b11d3ea3a9fe" />
-  <project path="system/netd" name="platform/system/netd" revision="6e4d5db1b11f808bb4bdcc8dd45a7158c6c88515" />
+  <project path="hardware/ril" name="platform/hardware/ril" />
+  <project path="libcore" name="platform/libcore" />
+  <project path="ndk" name="platform/ndk" />
+  <project path="packages/apps/BasicSmsReceiver" name="platform/packages/apps/BasicSmsReceiver" />
+  <project path="packages/apps/Bluetooth" name="platform/packages/apps/Bluetooth" />
+  <project path="packages/apps/Browser" name="platform/packages/apps/Browser" />
+  <project path="packages/apps/Calculator" name="platform/packages/apps/Calculator" />
+  <project path="packages/apps/Calendar" name="platform/packages/apps/Calendar" />
+  <project path="packages/apps/Camera" name="platform/packages/apps/Camera" />
+  <project path="packages/apps/CertInstaller" name="platform/packages/apps/CertInstaller" />
+  <project path="packages/apps/Contacts" name="platform/packages/apps/Contacts" />
+  <project path="packages/apps/DeskClock" name="platform/packages/apps/DeskClock" />
+  <project path="packages/apps/Email" name="platform/packages/apps/Email" />
+  <project path="packages/apps/Exchange" name="platform/packages/apps/Exchange" />
+  <project path="packages/apps/Gallery" name="platform/packages/apps/Gallery" />
+  <project path="packages/apps/Gallery3D" name="platform/packages/apps/Gallery3D" />
+  <project path="packages/apps/HTMLViewer" name="platform/packages/apps/HTMLViewer" />
+  <project path="packages/apps/Launcher2" name="platform/packages/apps/Launcher2" />
+  <project path="packages/apps/Mms" name="platform/packages/apps/Mms" />
+  <project path="packages/apps/Music" name="platform/packages/apps/Music" />
+  <project path="packages/apps/Nfc" name="platform/packages/apps/Nfc" />
+  <project path="packages/apps/PackageInstaller" name="platform/packages/apps/PackageInstaller" />
+  <project path="packages/apps/Phone" name="platform/packages/apps/Phone" />
+  <project path="packages/apps/Protips" name="platform/packages/apps/Protips" />
+  <project path="packages/apps/Provision" name="platform/packages/apps/Provision" />
+  <project path="packages/apps/QuickSearchBox" name="platform/packages/apps/QuickSearchBox" />
+  <project path="packages/apps/SoundRecorder" name="platform/packages/apps/SoundRecorder" />
+  <project path="packages/apps/SpeechRecorder" name="platform/packages/apps/SpeechRecorder" />
+  <project path="packages/apps/Stk" name="platform/packages/apps/Stk" />
+  <project path="packages/apps/Tag" name="platform/packages/apps/Tag" />
+  <project path="packages/apps/VideoEditor" name="platform/packages/apps/VideoEditor" />
+  <project path="packages/apps/VoiceDialer" name="platform/packages/apps/VoiceDialer" />
+  <project path="packages/experimental" name="platform/packages/experimental" />
+  <project path="packages/inputmethods/LatinIME" name="platform/packages/inputmethods/LatinIME" />
+  <project path="packages/inputmethods/OpenWnn" name="platform/packages/inputmethods/OpenWnn" />
+  <project path="packages/inputmethods/PinyinIME" name="platform/packages/inputmethods/PinyinIME" />
+  <project path="packages/providers/ApplicationsProvider" name="platform/packages/providers/ApplicationsProvider" />
+  <project path="packages/providers/CalendarProvider" name="platform/packages/providers/CalendarProvider" />
+  <project path="packages/providers/ContactsProvider" name="platform/packages/providers/ContactsProvider" />
+  <project path="packages/providers/DownloadProvider" name="platform/packages/providers/DownloadProvider" />
+  <project path="packages/providers/DrmProvider" name="platform/packages/providers/DrmProvider" />
+  <project path="packages/providers/GoogleContactsProvider" name="platform/packages/providers/GoogleContactsProvider" />
+  <project path="packages/providers/MediaProvider" name="platform/packages/providers/MediaProvider" />
+  <project path="packages/providers/TelephonyProvider" name="platform/packages/providers/TelephonyProvider" />
+  <project path="packages/providers/UserDictionaryProvider" name="platform/packages/providers/UserDictionaryProvider" />
+  <project path="packages/wallpapers/Basic" name="platform/packages/wallpapers/Basic" />
+  <project path="packages/wallpapers/HoloSpiral" name="platform/packages/wallpapers/HoloSpiral" />
+  <project path="packages/wallpapers/LivePicker" name="platform/packages/wallpapers/LivePicker" />
+  <project path="packages/wallpapers/MagicSmoke" name="platform/packages/wallpapers/MagicSmoke" />
+  <project path="packages/wallpapers/MusicVisualization" name="platform/packages/wallpapers/MusicVisualization" />
+  <project path="system/media" name="platform/system/media" />
+  <project path="system/netd" name="platform/system/netd" />
 
   <!-- END open-source projects -->
 
