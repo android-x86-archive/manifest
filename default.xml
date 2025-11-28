@@ -7,7 +7,7 @@
   <default revision="refs/tags/HLK75D" remote="aosp" sync-j="1" />
 
   <!-- From x86 port repositories -->
-  <project path="build" name="platform/build" remote="x86" revision="honeycomb-x86" >
+  <project path="build" name="build" remote="x86" revision="honeycomb-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
   <project path="kernel" name="kernel" remote="x86" revision="android-3.0.x" />
