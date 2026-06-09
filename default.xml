@@ -150,7 +150,6 @@
   <project path="external/webkit" name="platform/external/webkit" revision="adef70b313908ec0945a678eb665ffc1e9d373dd" />
   <project path="external/webp" name="platform/external/webp" revision="9aea642eefa7a641ab8b89d953251939221d2719" />
   <project path="external/wpa_supplicant" name="platform/external/wpa_supplicant" revision="92202cf7a2e615b65e892aa8f633b469ddcb522e" />
-  <project path="external/wpa_supplicant_6" name="platform/external/wpa_supplicant_6" revision="4d13ed6d3f252ef7a3ae2fd18000fb765b5c2fa1" />
   <project path="external/xmlwriter" name="platform/external/xmlwriter" />
   <project path="external/zlib" name="platform/external/zlib" revision="96c70b1df1629d7f0eb8f666045bfd5eb062cebf" />
   <project path="frameworks/compile/libbcc" name="platform/frameworks/compile/libbcc" revision="f34613746616aad79e1a40162e6ad2d3933fc0e0" />
