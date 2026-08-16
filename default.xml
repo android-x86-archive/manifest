@@ -4,13 +4,15 @@
            fetch="https://android.googlesource.com" />
   <remote  name="x86"
            fetch="https://github.com/android-x86-mirror" />
+  <remote  name="archive"
+           fetch="https://github.com/android-x86-archive" />
   <default revision="refs/tags/android-4.0.1_r1" remote="aosp" sync-j="4" />
 
   <!-- From x86 port repositories -->
   <project path="build" name="build" remote="x86" revision="honeycomb-x86" >
     <copyfile src="core/root.mk" dest="Makefile" />
   </project>
-  <project path="kernel" name="kernel" remote="x86" revision="android-3.0.x" />
+  <project path="kernel" name="kernel" remote="archive" revision="android-3.0.1" />
   <project path="bionic" name="bionic" remote="x86" revision="honeycomb-x86" />
   <project path="bootable/newinstaller" name="bootable-newinstaller" remote="x86" revision="honeycomb-x86" />
   <project path="dalvik" name="dalvik" remote="x86" revision="honeycomb-x86" />
